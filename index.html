@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="style.css">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bg1blur.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="page2.html" class="w3-button w3-block w3-black">MY PORTFOLIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="page3.html" class="w3-button w3-block w3-black">แนะนำกีฬาที่สนใจ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT ME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:95px">WELCOME TO<br>MY WEBPAGE</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style="font-size:30px">ABOUT ME</span></h5>
+    <p>สวัสดีครับ ผมชื่อนายเตชินท์  ซาไธสง</p>
+    <p>ผมชื่อเล่นชื่อฟีฟ่า เกิดที่กรุงเทพมหานคร ปัจจุบันเป็นนักศึกษาสาขาวิทยาการข้อมูลและเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร</p>
+    <p style="text-align: center;" class="w3-container w3-dark-grey w3-round">คำคมประจำตัว</p>
+    <div class="w3-panel w3-leftbar">
+      <p><i>Success is not the key to happiness. Happiness is the key to success.
+        If you love what you are doing, you will be successful.</i></p>
+    </div>
+    <img src="child.JPG" style="width:40%;max-width:1000px" class="w3-margin-top"> 
+    <img src="me1.jpg" style="width:40%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT ME</span></h5>
+    <img src="fbicon.png" alt="" style="width: 10%;">
+    <a href="https://www.facebook.com/techin233" target="_black" class="w3-hover-text-green">Techin Zathaisong</a>
+    <img src="iglogo.png" alt="" style="width: 10%;">
+    <a href="https://www.instagram.com/tchinnz/" target="_black" class="w3-hover-text-green">tchinnz</a>
+    <img src="email.png" alt="" style="width:10%">
+    techin-z@rmutp.ac.th
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <P>THANK YOU</P>
+    <a href="#top"><button class="w3-button w3-white w3-border">Go to top</button></a>
+  </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
